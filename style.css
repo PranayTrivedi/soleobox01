@@ -1,3 +1,7 @@
+*{
+  box-sizing: border-box;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -83,7 +87,7 @@ nav {
 
 .sliderWrapper {
   display: flex;
-  width: 500vw;
+  width: 600vw;
   transition: all 1.5s ease-in-out;
 }
 
@@ -130,7 +134,7 @@ nav {
 
 .buyButton {
   position: absolute;
-  top: 50%;
+  top: 70%;
   right: 10%;
   font-size: 30px;
   font-weight: 900;
@@ -163,27 +167,11 @@ nav {
 }
 
 .sliderItem:nth-child(5) .sliderBg {
-  background-color: rgb(124, 115, 80);
+  background-color: aquamarine;
 }
 
-.sliderItem:nth-child(1) .sliderPrice {
-  background-color: #369e62;
-}
-
-.sliderItem:nth-child(2) .sliderPrice {
-  background-color: rebeccapurple;
-}
-
-.sliderItem:nth-child(3) .sliderPrice {
-  background-color: teal;
-}
-
-.sliderItem:nth-child(4) .sliderPrice {
-  background-color: cornflowerblue;
-}
-
-.sliderItem:nth-child(5) .sliderPrice {
-  background-color: rgb(124, 115, 80);
+.sliderItem:nth-child(6) .sliderBg {
+  background-color: burlywood;
 }
 
 .features {
@@ -221,7 +209,7 @@ nav {
   height: 100vh;
   background-color: whitesmoke;
   position: relative;
-  clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
 }
 
 .productImg {
@@ -250,19 +238,21 @@ nav {
 .sizes {
   display: flex;
   margin-bottom: 20px;
+  cursor: pointer;
 }
 
 .color {
   width: 32px;
   height: 32px;
   border-radius: 5px;
-  background-color: black;
+  background-color: white;
   margin-right: 10px;
   cursor: pointer;
 }
 
 .color:last-child {
-  background-color: darkblue;
+  background-color: skyblue;
+
 }
 
 .size {
@@ -270,8 +260,8 @@ nav {
   border: 1px solid black;
   margin-right: 10px;
   font-size: 20px;
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: black;
 }
 
 .productButton {
@@ -415,7 +405,7 @@ footer {
 }
 
 .dev:hover {
-  color: hotpink;
+  color: rgb(255, 182, 255);
 }
 
 .mostly-customized-scrollbar::-webkit-scrollbar {
@@ -534,10 +524,10 @@ footer {
     align-items: center;
     background-color: whitesmoke;
   }
-
-  @media (min-width: 768px) {
-    .sliderTitle {
-      display: none;
-    }
-  }
 } ;
+
+@media (min-width: 768px) {
+  .sliderTitle {
+    display: none;
+  }
+}

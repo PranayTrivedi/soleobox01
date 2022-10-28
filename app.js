@@ -4,77 +4,93 @@ const menuItems = document.querySelectorAll(".menuItem");
 const products = [
   {
     id: 1,
-    title: "Air Force",
-    price: 1999,
+    title: "Air Jordan 1",
+    price: 1799,
     colors: [
       {
-        code: "black",
-        img: "./img/air.png",
+        code: "white",
+        img: "./img/air jordan 1 white.png",
       },
       {
-        code: "white",
-        img: "./img/air2.png",
+        code: "skyblue",
+        img: "./img/air forc 1 skyblue.png",
       },
     ],
   },
   {
     id: 2,
-    title: "Air Jordan",
-    price: 1299,
+    title: "Air force 1",
+    price: 1599,
     colors: [
       {
-        code: "lightgray",
-        img: "./img/jordan.png",
+        code: "white",
+        img: "./img/air force 1 white.png",
       },
       {
-        code: "green",
-        img: "./img/jordan2.png",
-      },
+        code: "black",
+        img: "./img/air force 1 black.png",
+      }
+   ,
     ],
   },
   {
     id: 3,
-    title: "Blazer",
-    price: 1499,
+    title: "ONITSUKA TIGER",
+    price: 1299,
     colors: [
       {
-        code: "lightgray",
-        img: "./img/blazer.png",
+        code: "white",
+        img: "./img/onitsuka tiger white.png",
       },
       {
-        code: "green",
-        img: "./img/blazer2.png",
+        code: "black",
+        img: "./img/onitsuka tiger black.png",
       },
+      {
+        code: "gray",
+        img: "./img/onitsuka tiger gray.png",
+      }
     ],
   },
   {
     id: 4,
-    title: "Crater",
-    price: 899,
+    title: "TRAVIS SCOTT",
+    price: 1799,
     colors: [
       {
-        code: "black",
-        img: "./img/crater.png",
-      },
-      {
-        code: "lightgray",
-        img: "./img/crater2.png",
-      },
+        code: "white",
+        img: "./img/travis scott white.png",
+      }
     ],
   },
   {
     id: 5,
-    title: "Hippie",
-    price: 1999,
+    title: "SLIDER",
+    price: 399,
     colors: [
       {
-        code: "gray",
-        img: "./img/hippie.png",
+        code: "black",
+        img: "./img/slider balck.png",
       },
       {
-        code: "black",
-        img: "./img/hippie2.png",
+        code: "white",
+        img: "./img/slider white.png",
       },
+    ],
+  },
+  {
+    id: 6,
+    title: "ADIDAS ULTRABOOST",
+    price: 2199,
+    colors: [
+      {
+        code: "white",
+        img: "./img/adidas ultraboost.png",
+      },
+      {
+        code: "white",
+        img: "./img/adidas ultraboost.png",
+      }
     ],
   },
 ];
@@ -85,7 +101,7 @@ const currentProductImg = document.querySelector(".productImg");
 const currentProductTitle = document.querySelector(".productTitle");
 const currentProductPrice = document.querySelector(".productPrice");
 const currentProductColors = document.querySelectorAll(".color");
-const currentProductSizes = document.querySelector(".size");
+const currentProductSizes = document.querySelectorAll(".size");
 
 menuItems.forEach((item, index) => {
   item.addEventListener("click", () => {
@@ -110,5 +126,16 @@ menuItems.forEach((item, index) => {
 currentProductColors.forEach((color, index) => {
   color.addEventListener("click", () => {
     currentProductImg.src = choosenProduct.colors[index].img;
+  });
+});
+
+currentProductSizes.forEach((size, index) => {
+  size.addEventListener("click", () => {
+    currentProductSizes.forEach((size) => {
+      size.style.backgroundColor = "white";
+      size.style.color = "black";
+    });
+    size.style.backgroundColor = "black";
+    size.style.color = "white";
   });
 });
