@@ -87,7 +87,7 @@ nav {
 
 .sliderWrapper {
   display: flex;
-  width: 600vw;
+  width: 800vw;
   transition: all 1.5s ease-in-out;
 }
 
@@ -113,7 +113,7 @@ nav {
 .sliderTitle {
   position: absolute;
   top: 10%;
-  right: 10%;
+  right: 5%;
   font-size: 60px;
   font-weight: 900;
   text-align: center;
@@ -159,7 +159,7 @@ nav {
 }
 
 .sliderItem:nth-child(3) .sliderBg {
-  background-color: teal;
+  background-color: olive;
 }
 
 .sliderItem:nth-child(4) .sliderBg {
@@ -167,11 +167,19 @@ nav {
 }
 
 .sliderItem:nth-child(5) .sliderBg {
-  background-color: aquamarine;
+  background-color: gold;
 }
 
 .sliderItem:nth-child(6) .sliderBg {
-  background-color: burlywood;
+  background-color: #3399ff;
+}
+
+.sliderItem:nth-child(7) .sliderBg {
+  background-color: salmon;
+}
+
+.sliderItem:nth-child(8) .sliderBg {
+  background-color: goldenrod;
 }
 
 .features {
@@ -210,6 +218,7 @@ nav {
   background-color: whitesmoke;
   position: relative;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+  overflow-y: auto;
 }
 
 .productImg {
@@ -231,7 +240,6 @@ nav {
 
 .productDesc {
   font-style: 24px;
-  color: gray;
 }
 
 .colors,
@@ -354,7 +362,6 @@ footer {
 .fListItem {
   margin-bottom: 10px;
   color: gray;
-  cursor: pointer;
 }
 
 .footerRight {
@@ -434,6 +441,7 @@ footer {
     margin: 20px;
     font-weight: 700;
     font-size: 20px;
+
   }
 
   .slider {

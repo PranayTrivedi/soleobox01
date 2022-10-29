@@ -58,7 +58,11 @@ const products = [
     price: 1799,
     colors: [
       {
-        code: "white",
+        code: "#F2F2F2",
+        img: "./img/travis scott white.png",
+      },
+      {
+        code: "#F2F2F2",
         img: "./img/travis scott white.png",
       }
     ],
@@ -73,7 +77,7 @@ const products = [
         img: "./img/slider balck.png",
       },
       {
-        code: "white",
+        code: "tan",
         img: "./img/slider white.png",
       },
     ],
@@ -84,15 +88,45 @@ const products = [
     price: 2199,
     colors: [
       {
-        code: "white",
+        code: "#F2F2F2",
         img: "./img/adidas ultraboost.png",
       },
       {
-        code: "white",
+        code: "#F2F2F2",
         img: "./img/adidas ultraboost.png",
       }
     ],
   },
+  {
+    id: 7,
+    title: "REEBOK ZIG KINETICA",
+    price: 2999,
+    colors: [
+      {
+        code: "#F2F2F2",
+        img: "./img/reebok  zig kinetica.png",
+      },
+      {
+        code: "#F2F2F2",
+        img: "./img/reebok  zig kinetica.png",
+      }
+    ],
+  },
+  {
+    id: 8,
+    title: "ASICS GEL KAYANO",
+    price: 1699,
+    colors: [
+      {
+        code: "#F2F2F2",
+        img: "./img/asics gel kayano.png",
+      },
+      {
+        code: "#F2F2F2",
+        img: "./img/asics gel kayano.png",
+      }
+    ],
+  }
 ];
 
 let choosenProduct = products[0];
