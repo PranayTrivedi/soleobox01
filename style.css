@@ -287,6 +287,15 @@ nav {
   color: black;
 }
 
+.qty{
+  margin-bottom: 1rem;
+}
+
+.inp{
+  border: none;
+  width: 50px;
+}
+
 .gallery {
   padding: 50px;
   display: flex;
